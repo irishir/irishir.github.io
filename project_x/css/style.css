@@ -38,10 +38,14 @@ h1 {
     font-family: GothaProBol, sans-serif;
     font-size: 26pt;
     letter-spacing: 3px;
-    margin-top: 0px;
+	margin-top: 0px;
+	position: absolute;
+    top: 25%
 }
 
 .block__main--form {
+	position: absolute;
+    top: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
