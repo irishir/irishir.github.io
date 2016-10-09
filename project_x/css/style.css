@@ -244,7 +244,8 @@ table tbody tr td:first-child {
     text-align: center;
 }
 
-table tbody tr td:last-child{   
+table tbody tr td:last-child{
+    font-family: GothaProBol, sans-serif;   
     text-align: center;
 }
 
