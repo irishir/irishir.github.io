@@ -81,7 +81,6 @@ input:focus {
     border-bottom-color: #8cd536;
     color: #222;
 }
-
 button {
     background: #0e316c;
     font-family: GothaProBol, sans-serif;
@@ -171,8 +170,27 @@ button:hover {
     width: 294px;
     height: 60px;
     margin-top: 30px;
-}
 
+}
+.button__a{
+    font-family: GothaProBol, sans-serif;
+    color: #fff;
+    font-size: 16pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 0px;
+    border-bottom: 2px solid #052547;
+    width: 294px;
+    height: 60px;
+    margin-top: 30px;
+    background: #0e316c;
+    text-align: center;
+    line-height: 3;
+    text-decoration: none;
+}
+.button__a:hover{
+     background: #052547;
+}
 .block__header--text-2{
     justify-content: space-between;
 }
@@ -269,4 +287,96 @@ input::-moz-placeholder{
     text-overflow: ellipsis;
     padding-left: 10px;
     color: #fff;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    height: 30%;
+    top: 25%;
+    position: absolute;
+    transition: all 5s ease-in-out;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #052547;
+  text-transform: uppercase;
+  font-family: GothaProBol, sans-serif;
+  font-size: 20pt;
+  letter-spacing: 1px;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #5697e8;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.popup__text{
+    color:#333;
+    text-align: center;
+    font-size: 16px;
+}
+.popup__button-a{
+    font-family: GothaProBol, sans-serif;
+    color: #fff;
+    font-size: 15pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 0px;
+    width: 294px;
+    height: 60px;
+    border-bottom: 2px solid #052547;
+    background: #0e316c;
+    text-decoration: none;
+    position: relative;
+    top: 46;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.popup__button-a:hover{
+     background: #052547;
+}
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
 }

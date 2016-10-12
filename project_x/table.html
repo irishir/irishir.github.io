@@ -29,7 +29,21 @@
                 <span class="form__span--key">ключ
                     <input class="input__setting--style input__setting--margin" type="password" placeholder="Введите не менее 6-ти символов" name="key">
                 </span>
-                <button class="button__setting--style" type="submit" name="enter">Хочу пять!</button>
+
+                <a href="#popup" class="button__a" name="enter">Хочу пять!</a>
+            <!--popup-->
+                <div id="popup" class="overlay">
+    <div class="popup">
+        <h2>Ошибка</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="popup__text">
+           Приносим свои извинения. <br>Сервис временно не доступен.
+           <br>
+            <a href="#" class="popup__button-a">Попробовать еще</a>
+        </div>
+
+    </div>
+</div>
             </form>
         </div>
         <div class="container">
