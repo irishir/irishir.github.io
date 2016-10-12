@@ -170,8 +170,8 @@ button:hover {
     width: 294px;
     height: 60px;
     margin-top: 30px;
-
 }
+
 .button__a{
     font-family: GothaProBol, sans-serif;
     color: #fff;
@@ -188,9 +188,11 @@ button:hover {
     line-height: 3;
     text-decoration: none;
 }
+
 .button__a:hover{
      background: #052547;
 }
+
 .block__header--text-2{
     justify-content: space-between;
 }
@@ -300,6 +302,7 @@ input::-moz-placeholder{
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -309,7 +312,6 @@ input::-moz-placeholder{
     margin: 70px auto;
     padding: 20px;
     background: #fff;
-    border-radius: 5px;
     width: 30%;
     height: 30%;
     top: 25%;
@@ -328,6 +330,7 @@ input::-moz-placeholder{
   font-size: 20pt;
   letter-spacing: 1px;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -338,18 +341,22 @@ input::-moz-placeholder{
   text-decoration: none;
   color: #333;
 }
+
 .popup .close:hover {
   color: #5697e8;
 }
+
 .popup .content {
   max-height: 30%;
   overflow: auto;
 }
+
 .popup__text{
     color:#333;
     text-align: center;
     font-size: 16px;
 }
+
 .popup__button-a{
     font-family: GothaProBol, sans-serif;
     color: #fff;
@@ -369,6 +376,7 @@ input::-moz-placeholder{
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .popup__button-a:hover{
      background: #052547;
 }
