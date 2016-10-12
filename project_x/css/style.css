@@ -372,11 +372,3 @@ input::-moz-placeholder{
 .popup__button-a:hover{
      background: #052547;
 }
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
-}
