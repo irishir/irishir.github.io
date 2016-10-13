@@ -329,7 +329,7 @@ input::-moz-placeholder{
   font-family: GothaProBol, sans-serif;
   font-size: 20pt;
   letter-spacing: 1px;
-  text-align: center
+  text-align: center;
 }
 
 .popup .close {
