@@ -3,18 +3,19 @@ body{
     padding-bottom: 0px;
     padding-top: 60px;
 }
-img{
+.block-portfolio__img{
 	max-width: 100%;
+    height: 14vw;
 }
 .block-portfolio__title{
 	font-weight: 400;
-	color: rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
     font-size: 14px;
-    line-height: 18px;
-    padding-bottom: 5px;
+    line-height: 0.6vw;
+    padding-bottom: 0;
     padding-left: 0%;
     padding-right: 0%;
-    padding-top: 0px;
+    padding-top: 1vw;
 }
 .block-portfolio__yaer{
     color: rgb(153, 153, 153);
