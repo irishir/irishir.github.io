@@ -17,7 +17,6 @@ function getData(url, callback) {
 }
 var portfolio = [];
 
-getData('https://github.com/irishir/irishir.github.io/blob/master/portfolio/js/index.json', renderPortfolio);
 
 function renderPortfolio(data) {
 
@@ -36,3 +35,5 @@ function renderPortfolio(data) {
     results = data["portfolio"];
 
 }
+
+getData('https://github.com/irishir/irishir.github.io/blob/master/portfolio/js/index.json', renderPortfolio);
