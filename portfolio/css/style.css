@@ -1,19 +1,23 @@
-*{
+body{
 	font-family: 'Roboto Slab', serif;
 }
 img{
 	max-width: 100%;
 }
 .block-portfolio__title{
-	font-size: ;
-	font-weight: 500;
+	font-weight: 400;
 	color: rgb(34, 34, 34);
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 18px;
     padding-bottom: 5px;
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 0px;
+}
+.block-portfolio__yaer{
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
 }
