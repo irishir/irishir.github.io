@@ -1,0 +1,116 @@
+{
+	"portfolio": [
+		{
+			"name": {
+				"title": "Deterra",
+				"year": "2017"
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/deterra_cover.png",
+				"landing": ""
+			},
+			"read_more": {
+				"text_first": "",
+				"text_last": ""
+			}
+		},
+		{
+			"name": {
+				"title": "Universiase in Sochi",
+				"year": "2017"
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/sochi_cover.png",
+				"landing": ""
+			},
+			"read_more": {
+				"text_first": "",
+				"text_last": ""
+			}
+		},
+		{
+			"name": {
+				"title": "Mvideo Vkus",
+				"year": "2017"
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/mvkus_cover2.jpg",
+				"landing": ""
+			},
+			"read_more": {
+				"text_first": "",
+				"text_last": ""
+			}
+		},
+		{
+			"name": {
+				"title": "Omega",
+				"year": "2016"
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/omega_cover.png",
+				"landing": ""
+			},
+			"read_more": {
+				"text_first": "",
+				"text_last": ""
+			}
+		},
+		{
+			"name": {
+				"title": "Fiztech. Radio",
+				"year": "2017"
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/fiztech_cover.png",
+				"landing": ""
+			},
+			"read_more": {
+				"text_first": "",
+				"text_last": ""
+			}
+		},
+		{
+			"name": {
+				"title": "Mediceya",
+				"year": "2017"
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/mediceya_cover.png",
+				"landing": ""
+			},
+			"read_more": {
+				"text_first": "",
+				"text_last": ""
+			}
+		},
+		{
+			"name": {
+				"title": "Green Cat Fashion",
+				"year": "2015"
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/green_cat_cover.jpg",
+				"landing": ""
+			},
+			"read_more": {
+				"text_first": "",
+				"text_last": ""
+			}
+		},
+		{
+			"name": {
+				"title": "To-Do List Android App",
+				"year": "2015"
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/smartwatch_cover.jpg",
+				"landing": ""
+			},
+			"read_more": {
+				"text_first": "",
+				"text_last": ""
+			}
+		}
+	]
+}
