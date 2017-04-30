@@ -36,4 +36,4 @@ function renderPortfolio(data) {
 
 }
 
-getData('https://www.github.com/irishir/irishir.github.io/blob/master/portfolio/js/index.json', renderPortfolio);
+getData('https://irishir.github.io/portfolio/js/index.json', renderPortfolio);
