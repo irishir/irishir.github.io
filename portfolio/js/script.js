@@ -32,7 +32,7 @@ function renderPortfolio(data) {
         html += '</div>';
     }
     document.getElementById("portfolio").innerHTML = html;
-    results = data["portfolio"];
+    portfolio = data["portfolio"];
 
 }
 
