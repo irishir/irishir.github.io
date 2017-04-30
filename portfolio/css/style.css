@@ -1,5 +1,7 @@
 body{
 	font-family: 'Roboto Slab', serif;
+    padding-bottom: 0px;
+    padding-top: 60px;
 }
 img{
 	max-width: 100%;
