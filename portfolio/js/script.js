@@ -27,7 +27,7 @@ function renderPortfolio(data) {
             year = data["portfolio"][i]["name"]["year"];
         html += '<div class="col-md-4" onclick="myModal(this.id)" id="' + [i] + '"> ';
         html += '<img class="" src="' + img + '" title="' + title + '"/>';
-        html += '<p class="">' + title + '</p>';
+        html += '<p class="block-portfolio__title">' + title + '</p>';
         html += '<p class="">' + year + '</p>';
         html += '</div>';
     }
