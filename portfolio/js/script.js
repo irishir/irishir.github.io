@@ -25,10 +25,10 @@ function renderPortfolio(data) {
         var img = data["portfolio"][i]["picture"]["index"],
             title = data["portfolio"][i]["name"]["title"];
             year = data["portfolio"][i]["name"]["year"];
-        html += '<div class="col-md-2 block__user_on" onclick="myModal(this.id)" id="' + [i] + '"> ';
-        html += '<img class="large" src="' + img + '" title="' + title + '"/>';
-        html += '<p class="block__user_on-capitalize name block__user_on_pdtop">' + title + '</p>';
-        html += '<p class="block__user_on-capitalize fullName block__user_on_pdtop">' + year + '</p>';
+        html += '<div class="col-md-2 " onclick="myModal(this.id)" id="' + [i] + '"> ';
+        html += '<img class="" src="' + img + '" title="' + title + '"/>';
+        html += '<p class="">' + title + '</p>';
+        html += '<p class="">' + year + '</p>';
         html += '</div>';
     }
     document.getElementById("portfolio").innerHTML = html;
