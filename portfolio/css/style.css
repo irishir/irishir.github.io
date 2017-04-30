@@ -9,7 +9,7 @@ body{
     padding-right: 5px;
 }
 .block-portfolio__img{
-	max-width: 100%;
+	width: 100%;
     height: 14vw;
 }
 .block-portfolio__title{
