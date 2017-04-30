@@ -25,7 +25,7 @@ function renderPortfolio(data) {
         var img = data["portfolio"][i]["picture"]["index"],
             title = data["portfolio"][i]["name"]["title"];
             year = data["portfolio"][i]["name"]["year"];
-        html += '<div class="col-md-2 " onclick="myModal(this.id)" id="' + [i] + '"> ';
+        html += '<div class="col-md-4" onclick="myModal(this.id)" id="' + [i] + '"> ';
         html += '<img class="" src="' + img + '" title="' + title + '"/>';
         html += '<p class="">' + title + '</p>';
         html += '<p class="">' + year + '</p>';
