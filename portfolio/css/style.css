@@ -7,6 +7,19 @@ body{
    	margin-bottom: 1.3vw;
     padding-left: 5px;
     padding-right: 5px;
+    cursor: pointer;
+}
+.block-portfolio:after {
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    background-image: -webkit-linear-gradient(bottom, rgb(0,0,0) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0) 100%);
+    background-image: linear-gradient(to top, rgb(0,0,0) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0) 100%);
+    opacity: 0.8;
 }
 .block-portfolio__img{
 	width: 100%;
@@ -52,37 +65,8 @@ body{
 .nav-bar #nav-bar li:hover{
 	color: rgb(34, 34, 34);
 }
-
 /*bs style*/
 @media (min-width: 1200px){
-	.container {
-	    width: 1370px;
-	}
-	.col-lg-2{
-		width: 18.366667%;
-	}
-	.col-lg-4 {
-	    width: 32.833333%;
-	}
-	.col-lg-10 {
-	    width: 79.333333%;
-	}
-}
-@media (max-width: 1200px){
-	.container {
-	    width: 1370px;
-	}
-	.col-lg-2{
-		width: 18.366667%;
-	}
-	.col-lg-4 {
-	    width: 32.833333%;
-	}
-	.col-lg-10 {
-	    width: 79.333333%;
-	}
-}
-@media (min-width: 992px){
 	.container {
 	    width: 1370px;
 	}
