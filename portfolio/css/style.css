@@ -36,10 +36,14 @@ body{
     line-height: 28px;
  	cursor: pointer;
 }
+.nav-bar #nav-bar{
+	padding-left: 0;
+}
 .nav-bar #nav-bar li{
     color: rgb(153, 153, 153);
     font-size: 14px;
     line-height: 18px;
+    list-style-type: none;
     cursor: pointer;
 }
 .nav-bar #nav-bar li:hover{
