@@ -25,7 +25,7 @@ body{
     background-image: linear-gradient(to top, rgb(0,0,0) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0) 100%);
     opacity: 0;
 }
-.block-portfolio:hover + .block-portfolio__img:after {
+.block-portfolio:hover * .block-portfolio__img:after {
 	opacity: 1;
 }
 .block-portfolio__title{
