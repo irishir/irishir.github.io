@@ -21,6 +21,7 @@ var portfolio = [];
 function renderPortfolio(data) {
 
     var html = '';
+    var nav = '';
     for (var i = 0; i < data["portfolio"].length; i++) {
         var img = data["portfolio"][i]["picture"]["index"],
             title = data["portfolio"][i]["name"]["title"];
@@ -30,8 +31,11 @@ function renderPortfolio(data) {
         html += '<p class="block-portfolio__title">' + title + '</p>';
         html += '<p class="block-portfolio__yaer">' + year + '</p>';
         html += '</div>';
+        nav += '<li onclick="myModal(this.id)" id="' + [i] + '">'+ title + '</li>';
     }
     document.getElementById("portfolio").innerHTML = html;
+    document.getElementById("nav-bar").innerHTML = nav;
+
     portfolio = data["portfolio"];
 
 }
