@@ -67,16 +67,23 @@ body{
 	position: fixed;
 }
 .block-modal{
-	position: fixed;
+	position: absolute;
     background: #fff;
 	width: 1014px;
 	height: auto;
-    overflow-y: auto;
+    overflow-y: scroll;
 	padding: 0;
 	margin: 0;
 	box-shadow: 0 10px 50px 0 rgba(30, 30, 30, 0.2);
 	display: none;
     transition: all 0.3s ease;
+}
+.block-modal::-webkit-scrollbar {
+    width: 0;
+}
+
+.block-portfolio__modal-img{
+    max-width: 100%;
 }
 /*bs style*/
 @media (min-width: 1200px){

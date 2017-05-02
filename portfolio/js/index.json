@@ -35,7 +35,7 @@
 			},
 			"picture": {
 				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/mvkus_cover2.jpg",
-				"landing": "https://github.com/irishir/irishir.github.io/blob/master/portfolio/img/mvideo-vkus.png"
+				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/mvideo-vkus.png"
 			},
 			"read_more": {
 				"text_first": "",
@@ -91,7 +91,7 @@
 			},
 			"picture": {
 				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/green_cat_cover.jpg",
-				"landing": "https://github.com/irishir/irishir.github.io/blob/master/portfolio/img/greencat.png"
+				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/greencat.png"
 			},
 			"read_more": {
 				"text_first": "",
@@ -105,7 +105,7 @@
 			},
 			"picture": {
 				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/smartwatch_cover.jpg",
-				"landing": "https://github.com/irishir/irishir.github.io/blob/master/portfolio/img/todolist.png"
+				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/todolist.png"
 			},
 			"read_more": {
 				"text_first": "",

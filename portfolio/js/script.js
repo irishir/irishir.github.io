@@ -49,9 +49,11 @@ function myModal(index) {
     var modal = '',
         name = data.name.title,
         read = data.read_more.text_first;
+        landing = data.picture.landing;
 
     modal += '<div > ';
     modal += '<p class="">' + name + '</p>';
+    modal += '<img class="block-portfolio__modal-img" src="' + landing + '" >';
     modal += '<p class="">' + read + '</p>';
     modal += '</div>';
 
