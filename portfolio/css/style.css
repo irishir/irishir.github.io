@@ -68,6 +68,9 @@ body{
 .nav-bar nav p{
     margin-top: 40px;
 }
+.nav-bar nav p:cheked + .block-modal{
+    display: block;
+}
 .nav-bar__fixed{
 	position: fixed;
 }
