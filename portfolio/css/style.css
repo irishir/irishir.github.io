@@ -53,15 +53,20 @@ body{
 	padding-left: 0;
 	margin-top: 26px;
 }
-.nav-bar #nav-bar li{
+.nav-bar #nav-bar li,
+.nav-bar nav p{
     color: rgb(153, 153, 153);
     font-size: 14px;
     line-height: 29px;
     list-style-type: none;
     cursor: pointer;
 }
-.nav-bar #nav-bar li:hover{
+.nav-bar #nav-bar li:hover,
+.nav-bar nav p:hover{
 	color: rgb(34, 34, 34);
+}
+.nav-bar nav p{
+    margin-top: 40px;
 }
 .nav-bar__fixed{
 	position: fixed;

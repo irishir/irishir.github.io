@@ -72,6 +72,24 @@ function myModal(index) {
     document.getElementById("landing_info").innerHTML = modal;
 
 }
+function ModalAboutMe(index) {
+
+    var data = portfolio[index];
+    document.getElementById("Modal").style.display = "block";
+    var modal = '',
+        title = data.paragraf_about.title,
+        img = data.paragraf_about.img,
+        paragraf = data.paragraf_about.text;
+
+    modal += '<div > ';
+    modal += '<p class="block-portfolio__modal-title">' + title + '</p>';
+    modal += '<img class="block-portfolio__modal-img" src="' + img + '" >';
+    modal += '<p class="block-portfolio__modal-subtitle">' + paragraf + '</p>';
+    modal += '</div>';
+
+    document.getElementById("landing_info").innerHTML = modal;
+
+}
 
 function closeModal() {
     document.getElementById("Modal").style.display = "none";

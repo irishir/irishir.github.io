@@ -113,6 +113,13 @@
 				"text_first": "Graduation thesis for a bachelor's degree",
 				"text_last": ""
 			}
+		},
+		{
+			"paragraf_about": {
+				"title": "About me",
+				"img": "sdfasd",
+				"text": "To-Do List Android App"
+			}
 		}
 	]
 }
