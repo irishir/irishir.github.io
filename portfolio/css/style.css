@@ -116,9 +116,9 @@ body{
     cursor: pointer;
 }
 .block-portfolio__modal-portfolio{
-        color: rgb(153, 153, 153);
+    color: rgb(153, 153, 153);
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     padding-bottom: 20px;
     padding-top: 40px;
@@ -129,7 +129,12 @@ body{
     padding-left: 100px;
     padding-right: 100px;
 }
+.block-portfolio__modal-portfolio a{
+    text-decoration: underline;
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
 }
+
 /*bs style*/
 @media (min-width: 1200px){
 	.container {
