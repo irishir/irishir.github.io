@@ -53,8 +53,8 @@ function myModal(index) {
 
     modal += '<div > ';
     modal += '<p class="">' + name + '</p>';
-    modal += '<img class="block-portfolio__modal-img" src="' + landing + '" >';
     modal += '<p class="">' + read + '</p>';
+    modal += '<img class="block-portfolio__modal-img" src="' + landing + '" >';
     modal += '</div>';
 
     document.getElementById("landing_info").innerHTML = modal;
