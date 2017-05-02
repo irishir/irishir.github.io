@@ -50,11 +50,46 @@ function myModal(index) {
         name = data.name.title,
         read = data.read_more.text_first;
         landing = data.picture.landing;
+        landing_404 = data.picture.landing_404;
+        paragraf_1 = data.read_more.paragraf_1;
+        paragraf_2 = data.read_more.paragraf_2;
+        paragraf_3 = data.read_more.paragraf_3;
+        paragraf_4 = data.read_more.paragraf_4;
+        paragraf_5 = data.read_more.paragraf_5;
+        paragraf_6 = data.read_more.paragraf_6;
+        paragraf_7 = data.read_more.paragraf_7;
+        link_1 = data.read_more.link_1;
+        link_2 = data.read_more.link_2;
+        link_3 = data.read_more.link_3;
+        link_4 = data.read_more.link_4;
+        link_5 = data.read_more.link_5;
 
     modal += '<div > ';
     modal += '<p class="block-portfolio__modal-title">' + name + '</p>';
     modal += '<p class="block-portfolio__modal-subtitle">' + read + '</p>';
+    if(typeof landing_404 === 'undefined'){
+
+    }else{
+        modal += '<img class="block-portfolio__modal-img" src="' + landing_404 + '" >';
+    }
     modal += '<img class="block-portfolio__modal-img" src="' + landing + '" >';
+    if(typeof paragraf_1 === 'undefined' && paragraf_2 === 'undefined' && paragraf_3 === 'undefined' && paragraf_4 === 'undefined' && paragraf_5 === 'undefined' && paragraf_6 === 'undefined' && paragraf_7 === 'undefined' && link_1 === 'undefined' && link_2 === 'undefined' && link_3 === 'undefined' && link_4 === 'undefined' && link_5 === 'undefined'){
+
+    }else{
+        modal += '<p>' + paragraf_1 + '</p>';
+        modal += '<p>' + paragraf_2 + '</p>';
+        modal += '<p>' + paragraf_3 + '</p>';
+        modal += '<p>' + paragraf_4 + '</p>';
+        modal += '<p>' + paragraf_5 + '</p>';
+        modal += '<p>' + paragraf_6 + '</p>';
+        modal += '<p>' + paragraf_7 + '</p>';
+        modal += '<p>' + link_1 + '</p>';
+        modal += '<p>' + link_2 + '</p>';
+        modal += '<p>' + link_3 + '</p>';
+        modal += '<p>' + link_4 + '</p>';
+        modal += '<p>' + link_5 + '</p>';
+
+    }
     modal += '</div>';
 
     document.getElementById("landing_info").innerHTML = modal;
