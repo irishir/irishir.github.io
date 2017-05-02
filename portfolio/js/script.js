@@ -56,12 +56,12 @@ function myModal(index) {
     modal += '<div > ';
     modal += '<p class="block-portfolio__modal-title">' + name + '</p>';
     modal += '<p class="block-portfolio__modal-subtitle">' + read + '</p>';
+    modal += '<img class="block-portfolio__modal-img" src="' + landing + '" >';
     if(typeof landing_404 === 'undefined'){
 
     }else{
         modal += '<img class="block-portfolio__modal-img" src="' + landing_404 + '" >';
     }
-    modal += '<img class="block-portfolio__modal-img" src="' + landing + '" >';
     if(typeof paragraf === 'undefined'){
 
     }else{
