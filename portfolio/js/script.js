@@ -62,10 +62,10 @@ function myModal(index) {
         modal += '<img class="block-portfolio__modal-img" src="' + landing_404 + '" >';
     }
     modal += '<img class="block-portfolio__modal-img" src="' + landing + '" >';
-    if(typeof paragraf_1 === 'undefined'){
+    if(typeof paragraf === 'undefined'){
 
     }else{
-        modal += '<p>' + paragraf + '</p>';
+        modal += '<p class="block-portfolio__modal-portfolio">' + paragraf + '</p>';
     }
     modal += '</div>';
 
