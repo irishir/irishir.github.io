@@ -35,7 +35,8 @@
 			},
 			"picture": {
 				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/mvkus_cover2.jpg",
-				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/mvideo-vkus.png"
+				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/mvideo-vkus.png",
+				"landing_404": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/mvkus404.gif"
 			},
 			"read_more": {
 				"text_first": "Adaptive culinary portal Mvkus for Mvideo",

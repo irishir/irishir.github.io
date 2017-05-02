@@ -52,8 +52,8 @@ function myModal(index) {
         landing = data.picture.landing;
 
     modal += '<div > ';
-    modal += '<p class="">' + name + '</p>';
-    modal += '<p class="">' + read + '</p>';
+    modal += '<p class="block-portfolio__modal-title">' + name + '</p>';
+    modal += '<p class="block-portfolio__modal-subtitle">' + read + '</p>';
     modal += '<img class="block-portfolio__modal-img" src="' + landing + '" >';
     modal += '</div>';
 

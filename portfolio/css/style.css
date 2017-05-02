@@ -85,6 +85,35 @@ body{
 .block-portfolio__modal-img{
     max-width: 100%;
 }
+.block-portfolio__modal-title {
+    color: rgb(34, 34, 34);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 15px;
+    padding-top: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.block-portfolio__modal-subtitle{
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    text-align: center;
+    width: 100%;
+}
+.block-modal__close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
 /*bs style*/
 @media (min-width: 1200px){
 	.container {
