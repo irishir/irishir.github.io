@@ -76,6 +76,7 @@ body{
 	margin: 0;
 	box-shadow: 0 10px 50px 0 rgba(30, 30, 30, 0.2);
 	display: none;
+    transition: all 0.3s ease;
 }
 /*bs style*/
 @media (min-width: 1200px){
