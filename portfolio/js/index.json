@@ -113,6 +113,12 @@
 				"text_first": "Graduation thesis for a bachelor's degree",
 				"text_last": ""
 			}
+		},
+		{
+			"name": {
+				"about_title": "About me",
+				"paragraf": "2015"
+			}
 		}
 	]
 }
