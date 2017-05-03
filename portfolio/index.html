@@ -13,22 +13,27 @@
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="col-lg-2 nav-bar">
-			<div class="nav-bar__fixed">
-				<a href="/portfolio/">Irina Shirobokova</a>
-				<nav>
-					<ul id="nav-bar"></ul>
-				</nav>
+	<main>
+		<div class="container">
+			<div class="col-lg-2 nav-bar">
+				<div class="nav-bar__fixed">
+					<a href="/portfolio/">Irina Shirobokova</a>
+					<nav>
+						<ul id="nav-bar"></ul>
+					</nav>
+				</div>
+			</div>
+			<div class="col-lg-10" >
+				<div id="portfolio"></div>
+				<div class="block-modal" id="Modal">
+		            <span class="block-modal__close" id="closeModal" onclick="closeModal(this)"><img src="img/close.svg" width="15px" height="15px" /></span>
+		            <div id="landing_info"></div>
+		        </div>
 			</div>
 		</div>
-		<div class="col-lg-10" >
-			<div id="portfolio"></div>
-			<div class="block-modal" id="Modal">
-	            <span class="block-modal__close" id="closeModal" onclick="closeModal(this)"><img src="img/close.svg" width="15px" height="15px" /></span>
-	            <div id="landing_info"></div>
-	        </div>
-		</div>
-	</div>
+	</main>
+	<footer  class="container col-lg-offset-2 col-lg-10 text-center">
+		© 2017 Irina Shirobokova
+	</footer>
 </body>
 </html>
