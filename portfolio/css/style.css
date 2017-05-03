@@ -125,14 +125,13 @@ body{
 .block-portfolio__modal-portfolio{
     color: rgb(153, 153, 153);
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 1px;
     font-weight: 400;
     padding-bottom: 20px;
     padding-top: 40px;
     width: 100%;
     text-align: left;
     line-height: 23px;
-    letter-spacing: 0.3px;
     padding-left: 100px;
     padding-right: 100px;
 }
