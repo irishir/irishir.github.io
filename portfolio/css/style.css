@@ -11,6 +11,9 @@ body{
     transition: all 1s ease;
     cursor: pointer;
 }
+.block-portfolio:last-child{
+    display: none;
+}
 .block-portfolio:hover{
 	opacity: 0.8;
 }
@@ -53,19 +56,17 @@ body{
 	padding-left: 0;
 	margin-top: 26px;
 }
-.nav-bar #nav-bar li,
-.nav-bar nav p{
+.nav-bar #nav-bar li{
     color: rgb(153, 153, 153);
     font-size: 14px;
     line-height: 29px;
     list-style-type: none;
     cursor: pointer;
 }
-.nav-bar #nav-bar li:hover,
-.nav-bar nav p:hover{
+.nav-bar #nav-bar li:hover{
 	color: rgb(34, 34, 34);
 }
-.nav-bar nav p{
+.nav-bar #nav-bar li:last-child{
     margin-top: 40px;
 }
 
