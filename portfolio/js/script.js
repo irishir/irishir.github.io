@@ -55,7 +55,7 @@ function myModal(index) {
 
     modal += '<div > ';
     modal += '<p class="block-portfolio__modal-title">' + name + '</p>';
-    if(typeof landing_404 === 'undefined'){
+    if(typeof read === 'undefined'){
 
     }else{
         modal += '<p class="block-portfolio__modal-subtitle">' + read + '</p>';
