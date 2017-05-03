@@ -80,3 +80,9 @@ function myModal(index) {
 function closeModal() {
     document.getElementById("Modal").style.display = "none";
 }
+
+jQuery(document).on('keyup',function(e) {
+    if (e.keyCode == 27) {
+        document.getElementById("Modal").style.display = "none";
+    }
+});
