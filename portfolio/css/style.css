@@ -80,7 +80,6 @@ body{
 	height: auto;
 	z-index: 1;
     text-align: center;
-    overflow-y: scroll;
 	padding: 0;
 	margin: 0;
 	box-shadow: 0 10px 50px 0 rgba(30, 30, 30, 0.2);
