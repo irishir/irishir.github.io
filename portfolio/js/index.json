@@ -113,6 +113,20 @@
 				"text_first": "Graduation thesis for a bachelor's degree",
 				"text_last": ""
 			}
+		},
+		{
+			"name": {
+				"title": "About me",
+				"year": ""
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/smartwatch_cover.jpg",
+				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/todolist.png"
+			},
+			"read_more": {
+				"text_first": "kdscksdkcmkm",
+				"text_last": ""
+			}
 		}
 	]
 }
