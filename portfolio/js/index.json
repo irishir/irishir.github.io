@@ -6,11 +6,11 @@
 				"year": "2018"
 			},
 			"picture": {
-				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/deterra_cover.png",
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/volunteers_cover.png",
 				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/volunteers.png"
 			},
 			"read_more": {
-				"text_first": "Infographic",
+				"text_first": "Infographic on the main page",
 				"text_last": ""
 			}
 		},
