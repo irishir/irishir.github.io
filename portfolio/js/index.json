@@ -2,6 +2,20 @@
 	"portfolio": [
 		{
 			"name": {
+				"title": "Volunteers 2019",
+				"year": "2018"
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/deterra_cover.png",
+				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/deterra.png"
+			},
+			"read_more": {
+				"text_first": "Infographic",
+				"text_last": ""
+			}
+		},
+		{
+			"name": {
 				"title": "Deterra",
 				"year": "2017"
 			},
