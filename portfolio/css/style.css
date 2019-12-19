@@ -32,7 +32,8 @@ body{
     padding-top: 1vw;
 }
 .block-portfolio__yaer{
-    color: rgb(153, 153, 153);
+/*     color: rgb(153, 153, 153); */
+	color: #9DA4AC;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -57,7 +58,8 @@ body{
 	margin-top: 26px;
 }
 .nav-bar #nav-bar li{
-    color: rgb(153, 153, 153);
+/*     color: rgb(153, 153, 153); */
+	color: #9DA4AC;
     font-size: 14px;
     line-height: 29px;
     list-style-type: none;
@@ -103,10 +105,11 @@ body{
     text-align: center;
     letter-spacing: 1px;
     width: 100%;
-    text-transform: uppercase;
+/*     text-transform: uppercase; */
 }
 .block-portfolio__modal-subtitle{
-    color: rgb(153, 153, 153);
+/*     color: rgb(153, 153, 153); */
+	color: #9DA4AC;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -123,7 +126,8 @@ body{
     cursor: pointer;
 }
 .block-portfolio__modal-portfolio{
-    color: rgb(153, 153, 153);
+/*     color: rgb(153, 153, 153); */
+	color: #9DA4AC;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -137,11 +141,13 @@ body{
 }
 .block-portfolio__modal-portfolio a{
     text-decoration: underline;
-    color: rgb(153, 153, 153);
+/*     color: rgb(153, 153, 153); */
+	color: #9DA4AC;
     font-family: 'Roboto', sans-serif;
 }
 footer{
-    color: rgba(153, 153, 153, 0.5);
+/*     color: rgba(153, 153, 153, 0.5); */
+	color: #9DA4AC;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 400;
