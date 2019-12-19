@@ -2,7 +2,7 @@
 	"portfolio": [
 		{
 			"name": {
-				"title": "Library – Mobile App Concept",
+				"title": "Library",
 				"year": "2019"
 			},
 			"picture": {
@@ -10,7 +10,7 @@
 				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/library.png"
 			},
 			"read_more": {
-				"text_first": "This is a mobile app concept for book lovers. The app offers people the opportunity to read and listen to books",
+				"text_first": "Mobile app concept for book lovers that offers people the opportunity to read and listen to books",
 				"text_last": ""
 			}
 		},
