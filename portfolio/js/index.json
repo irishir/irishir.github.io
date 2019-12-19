@@ -2,20 +2,6 @@
 	"portfolio": [
 		{
 			"name": {
-				"title": "Winter Universiade 2019",
-				"year": "2019"
-			},
-			"picture": {
-				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/UNI_cover.png",
-				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/UNI.png"
-			},
-			"read_more": {
-				"text_first": "Official website of XXIX Winter Universiade 2019 in Krasnoyarsk",
-				"text_last": ""
-			}
-		},
-		{
-			"name": {
 				"title": "Library",
 				"year": "2019"
 			},
@@ -25,6 +11,20 @@
 			},
 			"read_more": {
 				"text_first": "Mobile app concept for book lovers that offers people the opportunity to read and listen to books",
+				"text_last": ""
+			}
+		},
+		{
+			"name": {
+				"title": "Winter Universiade 2019",
+				"year": "2019"
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/UNI_cover.png",
+				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/UNI.png"
+			},
+			"read_more": {
+				"text_first": "Official website of XXIX Winter Universiade 2019 in Krasnoyarsk",
 				"text_last": ""
 			}
 		},
