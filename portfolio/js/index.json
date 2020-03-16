@@ -14,6 +14,19 @@
 				"text_last": ""
 			}
 		},
+		"name": {
+				"title": "Reactor",
+				"year": "2019"
+			},
+			"picture": {
+				"index": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/reactor_cover.png",
+				"landing": "https://raw.githubusercontent.com/irishir/irishir.github.io/master/portfolio/img/reactor.png"
+			},
+			"read_more": {
+				"text_first": "Landing page for innovation system for recruitment <a href='https://irishir.github.io/reactor/index.html'>Reactor</a>",
+				"text_last": ""
+			}
+		},
 		{
 			"name": {
 				"title": "Winter Universiade 2019",
