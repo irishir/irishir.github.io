@@ -1,0 +1,39 @@
+.ufo {
+  display: inline-block;
+  @include image('/background/ufo/ufo.svg', center, center, cover, no-repeat);
+  @include range(367.99, 367.99, 171.94, 171.94);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(39deg);
+  animation: 4s ease-in-out 0s wiggle infinite alternate;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+
+  &__ray {
+    display: inline-block;
+    @include image('/background/ufo/ray.svg', center, center, cover, no-repeat);
+    @include range(535.88, 535.88, 418.02, 418.02);
+    position: absolute;
+    top: 115px;
+    left: 42px;
+    animation: 3s ease 0s flicker infinite alternate;
+    transform: scaleY(1.16) rotateY(-14deg);
+  }
+
+  &__wrapper {
+    display: inline-block;
+    position: absolute;
+    right: -94px;
+    bottom: -157px;
+    opacity: 0;
+
+    @media (max-width: 1199px) {
+      right: -24px;
+      bottom: -67px;
+      opacity: 1;
+    }
+  }
+}

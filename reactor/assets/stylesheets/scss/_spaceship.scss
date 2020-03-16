@@ -1,0 +1,9 @@
+.spaceship {
+  display: inline-block;
+  @include image('/rocket.svg', center, center, cover, no-repeat);
+  @include range(22, 22, 46, 46);
+
+  @media (max-width: 1199px) {
+    @include range(15, 15, 30, 30);
+  }
+}

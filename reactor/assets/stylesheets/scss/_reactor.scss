@@ -1,0 +1,45 @@
+.reactor {
+
+  &__ring {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+    &_01 {
+      display: inline-block;
+      @include range(100, 100, 100, 100);
+      @include image('/logo/logo_01.svg', center, center, cover, no-repeat);
+      animation: 15s ease-in-out reactor_ring_01 infinite alternate;
+    }
+
+    &_02 {
+      display: inline-block;
+      @include range(60, 60, 60, 60);
+      @include image('/logo/logo_02.svg', center, center, cover, no-repeat);
+      animation: 8s ease-in-out reactor_ring_02 infinite alternate;
+    }
+  }
+
+  &__sun {
+    display: inline-block;
+    @include range(30, 30, 30, 30);
+    @include image('/logo/logo_03.svg', center, center, cover, no-repeat);
+    animation: 1s ease-in-out reactor_sun infinite alternate;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    display: inline-block;
+    @include range(100, 100, 100, 100);
+    @include image('/logo.svg', center, center, cover, no-repeat);
+    animation: 1s ease-in-out reactor_sun infinite alternate;
+  }
+}

@@ -1,0 +1,271 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $dark-indigo;
+  overflow-x: hidden;
+}
+
+h1 {
+  @include typography(64, 400, 76, $white-two);
+
+  @media (max-width: 1199px) {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+}
+
+h2 {
+  @include typography(52, 400, 76, $white-two);
+
+  @media (max-width: 1199px) {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+}
+
+h3 {
+  @include typography(36, 400, 54, $white-two);
+
+  @media (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+}
+
+h4 {
+  @include typography(24, 500, 32, $white-two);
+
+  @media (max-width: 1199px) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+.p0 {
+  @include typography(30, 400, 44, $white-two);
+
+  @media (max-width: 1199px) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+.p1 {
+  @include typography(22, 400, 34, $white-two);
+
+  @media (max-width: 1199px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.p2 {
+  @include typography(18, 400, 28, $white-two);
+
+  @media (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+.p3 {
+  @include typography(16, 400, 25, $white-two);
+
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+    line-height: 1.9;
+  }
+}
+
+.error {
+  @include typography(12, 500, 18, $reddish-pink);
+
+  &[hidden="true"] {
+    display: block;
+    animation: error_show .3s ease-in-out forwards;
+  }
+}
+
+.indent {
+  &_reset {
+    margin: 0;
+    padding: 0;
+  }
+
+  &_5 {
+    margin-bottom: 5px;
+  }
+
+  &_7 {
+    margin-bottom: 7px;
+  }
+
+  &_10 {
+     margin-bottom: 10px;
+   }
+
+  &_15 {
+    margin-bottom: 15px;
+  }
+
+  &_20 {
+    margin-bottom: 20px;
+  }
+
+  &_23 {
+    margin-bottom: 23px;
+  }
+
+  &_36 {
+    margin-bottom: 36px;
+  }
+
+  &_37_12 {
+    margin: 37px 0px 12px 0;
+  }
+
+  &_37_17 {
+    margin: 37px 0px 17px 0;
+  }
+
+  &_46 {
+    margin-bottom: 46px;
+  }
+
+  &_48 {
+    margin-bottom: 48px;
+  }
+
+  &_r_21 {
+    margin-right: 21px;
+  }
+
+  &_minus_9 {
+    margin-top: -9px;
+  }
+  &_top_7 {
+    margin-top: 7px;
+
+    @media (max-width: 1190px) {
+      margin-top: -9px;
+    }
+  }
+}
+
+.theme {
+  &_maize {
+    color: $maize;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.opacity {
+  &_08 {
+    opacity: .8;
+  }
+}
+
+#title {
+  opacity: 0;
+
+  @media (max-width: 1199px) {
+    opacity: 1;
+  }
+
+  & > span {
+    opacity: 0;
+
+    @media (max-width: 1199px) {
+      opacity: 1;
+    }
+  }
+}
+
+#slogan,
+#try_btn,
+#cosmonaut,
+#title_about_the_system,
+#description_about_the_system,
+#try-it-for-free,
+#moon,
+#saturn_01,
+#saturn_02,
+#title-how-it-works,
+#description-how-it-works,
+#try-leave-a-request,
+#title-leave-a-request,
+#description-leave-a-request,
+#form-leave-a-request {
+  opacity: 0;
+
+  @media (max-width: 1199px) {
+    opacity: 1;
+  }
+}
+
+
+#form-first-request {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+
+  @media (max-width: 1190px) {
+    flex-direction: column;
+
+    div {
+      & .input {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    div {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+}

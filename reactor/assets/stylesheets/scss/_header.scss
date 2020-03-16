@@ -1,0 +1,49 @@
+.header {
+  &__main {
+    display: grid;
+    grid-template-columns: 197px 84px auto 50px 240px;
+    grid-template-rows: 100px;
+    max-width: 1172px;
+    margin: auto;
+    align-items: center;
+    border-bottom: 1px solid $white-two_02;
+
+    @media (max-width: 1199px) {
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 15px 15px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 50px;
+      grid-template-areas: "logo nav" "btn btn";
+      grid-row-gap: 20px;
+    }
+  }
+
+  &__logo {
+    grid-area: 1 / 1;
+    display: flex;
+    position: relative;
+
+    @media (max-width: 1199px) {
+      grid-area: logo;
+      align-items: center;
+      z-index: 3;
+    }
+  }
+
+  &__nav {
+    grid-area: 1 / 3;
+
+    @media (max-width: 1199px) {
+      grid-area: nav;
+    }
+  }
+
+  &__right {
+    grid-area: 1 / 5;
+
+    @media (max-width: 1199px) {
+      grid-area: btn;
+    }
+  }
+}

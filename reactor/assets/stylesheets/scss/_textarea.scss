@@ -1,0 +1,59 @@
+.textarea {
+  @include range(440, 440, 110, 110);
+  @include typography(16, 400, 25, $dark-slate-blue);
+  padding: 15px 19px 17px 19px;
+  border-radius: 7px;
+  background-color: $white-two;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  resize: none;
+  overflow-y: auto;
+  font-family: 'Roboto', sans-serif;
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  &:active {
+    border-color: $faded-blue;
+  }
+
+  &:focus {
+    border-color: $faded-blue;
+    @include outline(transparent);
+  }
+
+  &::-webkit-input-placeholder {
+    @include typography(16, 400, 25, $bluey-grey);
+  }
+  &::-moz-placeholder {
+    @include typography(16, 400, 25, $bluey-grey);
+  }
+  &:-ms-input-placeholder {
+    @include typography(16, 400, 25, $bluey-grey);
+  }
+  &:-moz-placeholder {
+    @include typography(16, 400, 25, $bluey-grey);
+  }
+
+  &_theme_dark {
+    @include range(550, 550, 110, 110);
+    background-color: $dark-grey-blue;
+    color: $white-two;
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+      min-width: 100%;
+    }
+
+    &:active {
+      border-color: $white-two;
+    }
+
+    &:focus {
+      border-color: $white-two;
+      @include outline(transparent);
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.star {
+  position: absolute;
+
+  &__01,
+  &__02,
+  &__03,
+  &__04,
+  &__05 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    @include flex(flex, flex-start, center);
+    z-index: -1;
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &__01 {
+    top: 61px;
+  }
+
+  &__02 {
+    bottom: -120px;
+  }
+
+  &__03 {
+    bottom: -100px;
+  }
+
+  &__04 {
+    top: -130px;
+  }
+
+  &__05 {
+    top: -18px;
+  }
+
+  &-bg {
+
+    & > svg {
+      z-index: -1;
+    }
+
+    & .radiance_01 {
+      animation: 2s ease-in-out 1.5s star infinite alternate;
+    }
+    & .radiance_02 {
+      animation: 3s ease-in-out 3s star infinite alternate;
+    }
+    & .radiance_03 {
+      animation: 1s ease-in-out 1s star infinite alternate;
+    }
+    & .radiance_04 {
+      animation: ease-in-out 2s star infinite alternate;
+    }
+
+    &__01 {
+      @include range(1498, 1498, 531, 531);
+
+      @media (max-width: 1497px) {
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+    &__02 {
+      @include range(1502, 1502, 459, 459);
+
+      @media (max-width: 1501px) {
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+    &__03 {
+      @include range(1130, 1130, 114, 114);
+
+      @media (max-width: 1129px) {
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+    &__04 {
+      @include range(1458, 1458, 1165, 1165);
+
+      @media (max-width: 1457px) {
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+    &__05 {
+      @include range(1590, 1590, 678, 678);
+
+      @media (max-width: 1589px) {
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.footer {
+  display: grid;
+  grid-template-rows: 209px;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1199px) {
+    margin-top: 50px;
+    grid-template-rows: 100px;
+  }
+}

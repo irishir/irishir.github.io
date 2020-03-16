@@ -1,0 +1,38 @@
+.cosmonaut {
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    @include range(885, 885, 822, 822);
+    @include image('/background/galaxy.svg', center, center, cover, no-repeat);
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    animation: movement_background 5s infinite ease-in-out alternate;
+  }
+
+  &__body {
+    position: absolute;
+    top: 66px;
+    right: -74px;
+    display: inline-block;
+    @include range(341.82, 341.82, 442, 442);
+    @include image('/background/astronaut_02.svg', center, center, cover, no-repeat);
+    z-index: 1;
+    animation: movement_cosmonaut 2.5s infinite ease-in-out alternate;
+  }
+
+  &__oxygen {
+    position: absolute;
+    top: 18px;
+    right: -377px;
+    display: inline-block;
+    @include range(376, 376, 189, 189);
+    @include image('/background/hose.svg', center, center, cover, no-repeat);
+    animation: movement_oxygen 2.5s infinite ease-in-out alternate;
+  }
+}

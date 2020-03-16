@@ -1,0 +1,18 @@
+.nav {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+
+  &-toggle {
+    &_open {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      background: radial-gradient(at 50% 50%, $dark-slate-blue 0%, $dark-indigo 100%);
+      box-shadow: 0 2px 60px 0 $black-10, 0 -2px 60px 0 $black-10;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.logo {
+  display: inline-block;
+  @include image('logo.svg', center, center, cover, no-repeat);
+  @include range(50, 50, 50, 50);
+  margin-right: 30px;
+  transition: transform .3s ease;
+
+  @media (max-width: 1199px) {
+    &-toggle_open {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    &:hover + .logo {
+      transform: rotate(180deg);
+    }
+  }
+}

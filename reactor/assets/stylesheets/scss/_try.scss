@@ -1,0 +1,17 @@
+.try {
+  display: flex;
+  background: radial-gradient(at 50% 50%, $dusk-blue 26%, $dark-indigo-four 100%);
+  box-shadow: 0 2px 60px 0 $black-10, 0 -2px 60px 0 $black-10;
+  @include range(inherit, inherit, 240, 240);
+
+  @media (max-width: 1199px) {
+    @include range(inherit, inherit, inherit, inherit);
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+      padding-bottom: 33px;
+    }
+  }
+}

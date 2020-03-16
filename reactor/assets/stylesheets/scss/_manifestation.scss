@@ -1,0 +1,82 @@
+.manifestation {
+  &__title {
+    animation: .7s manifestation_up ease-in-out forwards;
+  }
+
+  &__reactor {
+    animation: .7s manifestation_reactor .5s ease-in-out forwards;
+  }
+
+  &__slogan {
+    animation: .7s manifestation_up 1s ease-in-out forwards;
+  }
+
+  &__try_btn {
+    animation: .7s manifestation_up 1.5s ease-in-out forwards;
+  }
+
+  &__cosmonaut {
+    animation: 1.4s manifestation_cosmonaut 1.4s ease forwards;
+  }
+
+  &__title_about_the_system {
+    animation: .7s manifestation_up 1.5s ease-in-out forwards;
+  }
+
+  &__description_about_the_system {
+    animation: .7s manifestation_up 1.5s ease-in-out forwards;
+  }
+
+  &__system-card {
+    &_00 {
+      animation: .7s manifestation_up ease-in-out forwards;
+    }
+    &_01 {
+      animation: .7s manifestation_up .5s ease-in-out forwards;
+    }
+    &_02 {
+      animation: .7s manifestation_up 1s ease-in-out forwards;
+    }
+  }
+
+  &__carousel-3d-slide,
+  &__try-it-for-free,
+  &__title-how-it-works,
+  &__description-how-it-works,
+  &__try-leave-a-request,
+  &__title-leave-a-request,
+  &__description-leave-a-request,
+  &__form-leave-a-request {
+    animation: .7s manifestation_up ease-in-out forwards;
+  }
+
+  &__moon {
+    animation: .7s manifestation_up .5s ease-in-out forwards;
+  }
+
+  &__saturn {
+    animation: .7s manifestation_saturn .5s ease-in-out forwards;
+  }
+
+  &__ufo {
+    animation: 1.4s manifestation_ufo .5s ease forwards;
+  }
+
+  &__work-card {
+    &_00 {
+      animation: .7s manifestation_up ease-in-out forwards;
+    }
+    &_01 {
+      animation: .7s manifestation_up .5s ease-in-out forwards;
+    }
+    &_02 {
+      animation: .7s manifestation_up 1s ease-in-out forwards;
+    }
+    &_03 {
+      animation: .7s manifestation_up 1.5s ease-in-out forwards;
+    }
+    &_04 {
+      animation: .7s manifestation_up 2s ease-in-out forwards;
+    }
+  }
+}

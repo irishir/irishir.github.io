@@ -1,0 +1,158 @@
+.work-cards {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 149px;
+  grid-row-gap: 134px;
+  //grid-template-areas:
+  //  "one two three"
+  //  "four five .";
+  counter-reset: work-card;
+  margin-top: 99px;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, 290px);
+    grid-template-rows: auto;
+    grid-column-gap: 100px;
+    grid-row-gap: 70px;
+    margin-left: 90px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 290px);
+    grid-template-rows: auto;
+    grid-column-gap: 75px;
+    grid-row-gap: 70px;
+    margin-left: 90px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.work-card {
+  position: relative;
+  opacity: 0;
+
+  @media (max-width: 1199px) {
+    opacity: 1;
+  }
+
+  &:hover &__logo {
+    transform: scale(1.05);
+  }
+
+  &:before {
+    position: absolute;
+    top: -87px;
+    left: -112px;
+    counter-increment: work-card;
+    content: counter(work-card);
+    background: linear-gradient(180deg, #262D74 0%, rgba(38, 45, 116, 0) 100%);
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    @include typography(300, 900, inherit, $white-two);
+    z-index: -1;
+    transition: transform .4s ease-in-out;
+  }
+
+  &:hover::before {
+    transform: scale(1.05);
+  }
+
+  &:nth-child(1) {
+    grid-column: span 3;
+    position: relative;
+    right: -92px;
+
+    @media (max-width: 1199px) {
+      grid-column: unset;
+      right: unset;
+    }
+  }
+  &:nth-child(2) {
+    grid-column: span 3;
+    position: relative;
+    right: -33px;
+
+    @media (max-width: 1199px) {
+      grid-column: unset;
+      right: unset;
+    }
+
+    &:before {
+      left: -84px;
+    }
+  }
+  &:nth-child(3) {
+    grid-column: span 3;
+
+    @media (max-width: 1199px) {
+      grid-column: unset;
+    }
+
+    &:before {
+      left: -95px;
+    }
+  }
+
+  &:nth-child(4) {
+    grid-row-start: 2;
+    grid-column: 3 / span 3;
+
+    @media (max-width: 1199px) {
+      grid-row-start: unset;
+      grid-column: unset;
+    }
+
+    &:before {
+      left: -97px;
+    }
+  }
+
+  &:nth-child(5) {
+    grid-row-start: 2;
+    grid-column: 6 / span 3;
+
+    @media (max-width: 1199px) {
+      grid-row-start: unset;
+      grid-column: unset;
+    }
+
+    &:before {
+      left: -88px;
+    }
+  }
+
+  &:nth-child(1) &__logo {
+    @include image('/how-it-works/01.svg', center, center, cover, no-repeat);
+    @include range(151, 151, 99, 99);
+  }
+
+  &:nth-child(2) &__logo {
+    @include image('/how-it-works/02.svg', center, center, cover, no-repeat);
+    @include range(150, 150, 99, 99);
+  }
+
+  &:nth-child(3) &__logo {
+    @include image('/how-it-works/03.svg', center, center, cover, no-repeat);
+    @include range(112, 112, 99, 99);
+  }
+
+  &:nth-child(4) &__logo {
+    @include image('/how-it-works/04.svg', center, center, cover, no-repeat);
+    @include range(133, 133, 99, 99);
+  }
+
+  &:nth-child(5) &__logo {
+    @include image('/how-it-works/05.svg', center, center, cover, no-repeat);
+    @include range(137, 137, 99, 99);
+  }
+
+  &__logo {
+    display: inline-block;
+    transition: transform .4s ease-in-out;
+  }
+}

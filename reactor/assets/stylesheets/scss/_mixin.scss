@@ -1,0 +1,48 @@
+@mixin typography($fz, $fw, $lh, $color) {
+  font-size: #{$fz}px;
+  font-weight: $fw;
+  @if(type-of($lh) == string) {
+    line-height: inherit;
+  } @else {
+    line-height: #{$lh}px;
+  }
+  color: $color;
+}
+
+@mixin image($img, $pos_x, $pos_y, $size, $repeat) {
+  background: url('../images/#{$img}') $pos_x $pos_y / $size $repeat;
+}
+
+@mixin range($max_w, $min_w, $max_h, $min_h) {
+  @if(type-of($max_w) == string) {
+    max-width: inherit;
+  } @else {
+    max-width: #{$max_w}px;
+  }
+  @if(type-of($min_w) == string) {
+    min-width: inherit;
+  } @else {
+    min-width: #{$min_w}px;
+  }
+  @if(type-of($max_h) == string) {
+    max-height: inherit;
+  } @else {
+    max-height: #{$max_h}px;
+  }
+  @if(type-of($min_h) == string) {
+    min-height: inherit;
+  } @else {
+    min-height: #{$min_h}px;
+  }
+}
+
+@mixin flex($display, $ai, $jc) {
+  display: $display;
+  align-items: $ai;
+  justify-content: $jc;
+}
+
+@mixin outline($outline: #f9cb4c) {
+  outline: 1px solid + ' ' + $outline;
+  outline-offset: 1px;
+}

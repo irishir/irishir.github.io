@@ -1,0 +1,31 @@
+.link {
+  display: inline-block;
+  @include typography(20, 400, 34, $maize);
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -34px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $maize;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+      animation: nav_line_hover .5s ease forwards;
+
+      @media (max-width: 1199px) {
+        opacity: 0;
+      }
+    }
+  }
+}

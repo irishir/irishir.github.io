@@ -1,0 +1,152 @@
+.btn {
+  @include flex(inline-flex, center, center);
+  @include typography(16, 500, 25, $white-two);
+  @include range(240, 240, 50, 50);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 7px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    @include range(0, 0, 0, 0);
+    border-radius: 50%;
+    transition: max-width .4s ease, min-width .4s ease, max-height .4s ease, min-height .4s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    &:before {
+      @include range(300, 300, 300, 300);
+
+      @media (max-width: 767px) {
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+
+  &:focus {
+    @include outline(transparent);
+  }
+
+  &_size_300-50 {
+    @include range(300, 300, 50, 50);
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &_size_300-60 {
+    @include range(300, 300, 60, 60);
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &_size_240-60 {
+    @include range(240, 240, 60, 60);
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &__outline {
+    border: 1px solid $white-two_04;
+    background-color: transparent;
+    padding: 0 45px;
+
+    &:before {
+      background-color: $white-two_01;
+    }
+  }
+
+  &__primary {
+    background-color: $reddish_pink;
+    box-shadow: 0 -2px 20px 0 $lipstick-30, 0 2px 20px 0 $lipstick-30;
+
+    &:before {
+      background-color: $pinkish-red;
+    }
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &:active {
+      box-shadow: none;
+      &:before {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__disabled {
+    background-color: $dark-blue-grey;
+    pointer-events: none;
+    box-shadow: none;
+    color: $white-two_02;
+  }
+
+  &__scroll-up-down {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    @include range(80, 80, 80, 80);
+    border-radius: 50%;
+
+    @media (max-width: 1199px) {
+      bottom: 15px;
+      right: 15px;
+      @include range(60, 60, 60, 60);
+    }
+
+    &:before {
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &:hover {
+      & > .spaceship {
+        animation: spaceship 1.5s ease-in-out forwards;
+      }
+    }
+  }
+}
+
+#updown {
+  display: none;
+
+  &.up {
+    @include flex(flex, center, center);
+  }
+
+  &.show {
+    animation: scale_up_show .5s ease-in-out forwards;
+  }
+
+  &.hide {
+    animation: scale_up_hide .5s ease-in-out forwards;
+  }
+}

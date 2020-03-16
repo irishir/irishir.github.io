@@ -1,0 +1,41 @@
+.popup {
+  @include range(310, 310, 220, 220);
+  background-color: transparent;
+  overflow: hidden;
+  position: fixed;
+  top: 30%;
+  right: 0;
+  z-index: 1;
+  transform: translateX(310px);
+
+  &_show {
+    animation: popup_show .5s ease-in-out forwards;
+  }
+
+  &_hide {
+    animation: popup_hide .5s ease-in-out forwards;
+  }
+
+  &__cloud {
+    @include flex(inline-flex, center, center);
+    background: url("../images/popup/speech_bubble.svg") center center/ contain no-repeat;
+    background-size: 220px 130px;
+    @include range(220, 220, 130, 130);
+  }
+
+  &__text {
+    @include typography(16, 400, 20, $dark-indigo);
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  &__astronaut {
+    display: inline-block;
+    @include range(200, 200, 206, 206);
+    object-fit: contain;
+    position: absolute;
+    bottom: -64px;
+    right: -87px;
+    transform: rotate(-23deg);
+  }
+}

@@ -1,0 +1,115 @@
+.planet {
+  &_01 {
+    position: absolute;
+    top: 67px;
+    right: -209px;
+    display: inline-block;
+    @include range(34, 34, 34, 34);
+    @include image('/planet/planet_01.svg', center, center, contain, no-repeat);
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &_02 {
+    position: absolute;
+    top: 57px;
+    right: -92px;
+    display: inline-block;
+    @include range(24, 24, 24, 24);
+    @include image('/planet/planet_02.svg', center, center, contain, no-repeat);
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+
+    &_six {
+      top: 156px;
+      right: 386px;
+    }
+  }
+  &_03 {
+    position: absolute;
+    top: 135px;
+    left: -203px;
+    display: inline-block;
+    @include range(44.01, 44.01, 44.01, 44.01);
+    @include image('/planet/planet_03.svg', center, center, contain, no-repeat);
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+
+    &_six {
+      @include range(65, 65, 65, 65);
+      top: 50px;
+    }
+  }
+  &_04 {
+    position: absolute;
+    top: -45px;
+    right: -21px;
+    display: inline-block;
+    @include range(98.66, 98.66, 99.35, 99.35);
+    @include image('/planet/planet_04.svg', center, center, contain, no-repeat);
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &__saturn {
+    position: absolute;
+    left: -91px;
+    top: -143px;
+  }
+}
+
+.saturn {
+  &_01 {
+    position: absolute;
+    top: -143px;
+    left: 276px;
+    display: inline-block;
+    @include range(188.37, 188.37, 187.5, 187.5);
+    @include image('/planet/saturn_01.svg', center, center, contain, no-repeat);
+    z-index: -1;
+    /*animation: saturn 5s infinite ease-in-out alternate;*/
+
+    @media (max-width: 1600px) {
+      left: 160px;
+    }
+
+    @media (max-width: 1440px) {
+      left: 60px;
+    }
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+  &_02 {
+    position: absolute;
+    top: -330px;
+    bottom: 0;
+    margin: auto;
+    left: 223px;
+    display: inline-block;
+    @include range(290.25, 290.25, 141.78, 141.78);
+    @include image('/planet/saturn_02.svg', center, center, contain, no-repeat);
+    /*animation: saturn 5s infinite ease-in-out alternate;*/
+
+    @media (max-width: 1600px) {
+      left: 108px;
+    }
+
+    @media (max-width: 1440px) {
+      left: 8px;
+    }
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+}

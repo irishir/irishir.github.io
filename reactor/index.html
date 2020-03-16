@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Реактор - Инновационная система  для рекрутинга. Твой персональный помощник">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#0c1038">
+    <meta name="theme-color" content="#0c1038">
+    <meta name=“yandex-verification” content=“381e484a367fd5c1" />
+
+    <title>Реактор - Инновационная система  для рекрутинга</title>
+
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+</head>
+<body class="indent_reset">
+<div id="preload" class="preload"></div>
+<div id="wrapper">
+    <header class="header">
+        <div class="header__main">
+            <div id="logo" class="header__logo">
+                <a href="/" class="logo__link"></a>
+                <div class="logo"></div>
+                <p class="p0 indent_reset">Реактор</p>
+            </div>
+            <div class="header__nav">
+                <nav class="nav menu_hide" id="navigation">
+                    <ul class="list indent_reset">
+                        <li class="list__item">
+                            <a class="link">О системе</a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link">Как это работает</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle__wrapper">
+                    <div onClick="menuMobile()" class="menu-toggle__inner" id="menuMobile">
+                        <div class="menu-toggle">
+                            <span class="menu-toggle__part"></span>
+                            <span class="menu-toggle__part"></span>
+                            <span class="menu-toggle__part"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__right">
+                <button id="leave-a-request-btn" class="btn btn__outline">
+                    Оставить заявку
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="relative">
+            <div class="star__01"></div>
+            <div class="screen screen__one">
+                <div class="relative">
+                    <h1 id="title" class="indent_10">Инновационная система для рекрутинга <span class="theme_maize">Реактор</span></h1>
+                    <p id="slogan" class="p0 indent_reset indent_48">Твой персональный помощник</p>
+                    <button id="try_btn" class="btn btn_size_300-60 btn__primary">
+                        Попробовать бесплатно
+                    </button>
+                </div>
+                <div id="cosmonaut" class="cosmonaut relative">
+                    <div class="cosmonaut__body"></div>
+                    <div class="cosmonaut__oxygen"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative">
+            <div class="star__02"></div>
+            <div class="screen screen__two" id="About-the-system">
+                <h2 id="title_about_the_system" class="indent_7">О системе</h2>
+                <p id="description_about_the_system" class="p1 indent_reset">Реактор сделает за тебя всю однообразную работу, напомнит вовремя о важном, структурирует информацию, поможет оценить кандидатов</p>
+                <div id="system-cards" class="system-cards">
+                    <div class="system-card">
+                        <div class="system-card__wrapper-logo">
+                            <div class="system-card__logo"></div>
+                        </div>
+                        <div>
+                            <h4 class="indent_37_12">Используй базу резюме</h4>
+                            <p class="p2 indent_reset">
+                                <span class="theme_maize">Реактор</span> подберёт подходящих кандидатов на вакансию из базы. Тебе только останется выбрать самых-самых
+                            </p>
+                        </div>
+                    </div>
+                    <div class="system-card">
+                        <div class="system-card__wrapper-logo">
+                            <div class="system-card__logo"></div>
+                        </div>
+                        <div>
+                            <h4 class="indent_37_12">Веди список задач</h4>
+                            <p class="p2 indent_reset">
+                                Веди личные и рабочие задачи <br>в одном календаре, делись ими <br>с командой. <span class="theme_maize">Реактор</span> напомнит обо всем, и ты ничего не забудешь
+                            </p>
+                        </div>
+                    </div>
+                    <div class="system-card">
+                        <div class="system-card__wrapper-logo">
+                            <div class="system-card__logo"></div>
+                        </div>
+                        <div>
+                            <h4 class="indent_37_12">Оповещай кандидатов</h4>
+                            <p class="p2 indent_reset">
+                                После того, как кандидат примет твой оффер, <span class="theme_maize">Реактор</span> сам оповестит других кандидатов. Тебе не надо тратить на это время
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="screen__three">
+            <div class="star__03"></div>
+            <div id="carousel">
+                <carousel-3d dir="ltr" border="0" perspective="0" width="830" height="585">
+                    <slide v-for="(slide, i) in slides" :index="i">
+                        <img v-bind:src="slide.src" alt="slide i">
+                    </slide>
+                </carousel-3d>
+            </div>
+        </div>
+
+        <div class="relative">
+            <div class="try" id="try-it-for-free">
+                <div class="screen screen__four">
+                    <h3 class="indent_reset indent_5">Просто попробуй. Это бесплатно.</h3>
+                    <p class="p2 indent_reset indent_23">Оставляя заявку, ты можешь не держать всё в голове, а переложить на систему. Будь первым, как Юра Гагарин!</p>
+                    <form id="form-first-request" action="">
+                        <div>
+                            <input name="email" class="input indent_r_21" type="email" placeholder="Электронная почта *" aria-label="Электронная почта">
+                            <p class="error indent indent_top_7" hidden>
+                                Например: ivan_ivanov@gmail.com
+                            </p>
+                        </div>
+                        <div>
+                            <input name="phone" class="input indent_r_21 phone" type="text" placeholder="Телефон *" aria-label="Телефон" />
+                            <p class="error indent indent_top_7" hidden>
+                                Например: +7 (912) 876-78-98
+                            </p>
+                        </div>
+                        <button id="form_one_btn" class="btn btn__primary ">Оставить заявку</button>
+                    </form>
+                    <div class="planet_02"></div>
+                    <div class="planet_03"></div>
+                    <div class="planet_04"></div>
+                </div>
+            </div>
+            <div id="moon">
+                <div class="moon"></div>
+            </div>
+        </div>
+
+        <div class="screen__five" id="How-it-works">
+            <div class="star__04"></div>
+            <div class="screen relative">
+                <h2 id="title-how-it-works" class="indent_reset indent_7">Как это работает</h2>
+                <p id="description-how-it-works" class="p1 indent_reset">Всего 5 шагов разделяет тебя и твою компанию от новых кадров</p>
+                <div id="work-cards" class="work-cards">
+                    <div class="work-card">
+                        <div class="work-card__wrapper-logo">
+                            <div class="work-card__logo"></div>
+                        </div>
+                        <h4 class="indent_37_17">Просто создай <br>вакансию</h4>
+                        <p class="p2 indent_reset">
+                            Отметь самую необходимую  информацию о вакансии <br>и публикуй ее на работных сайтах
+                        </p>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-card__wrapper-logo">
+                            <div class="work-card__logo"></div>
+                        </div>
+                        <h4 class="indent_37_17">Загрузи кандидатов <br>в один клик</h4>
+                        <p class="p2 indent_reset">
+                            Ищи подходящих кандидатов  <br>на работных сайтах, загружай резюме из почты и работай <br>в единой базе резюме
+                        </p>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-card__wrapper-logo">
+                            <div class="work-card__logo"></div>
+                        </div>
+                        <h4 class="indent_37_17">Делись <br>с коллегами</h4>
+                        <p class="p2 indent_reset">
+                            Делись впечатлениями <br>с коллегами, выставляй оценки <br>и формируй рейтинг соискателей
+                        </p>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-card__wrapper-logo">
+                            <div class="work-card__logo"></div>
+                        </div>
+                        <h4 class="indent_37_17">Назначай встречи</h4>
+                        <p class="p2 indent_reset">
+                            Назначь дату и время встречи прямо из системы: все контакты соискателей хранятся в базе
+                        </p>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-card__wrapper-logo">
+                            <div class="work-card__logo"></div>
+                        </div>
+                        <h4 class="indent_37_17">Предлагай работу</h4>
+                        <p class="p2 indent_reset">
+                            Отправь предложение кандидату о работе: система сохранит всю историю работы
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative">
+            <div id="try-leave-a-request" class="try">
+                <div class="screen">
+                    <div class="screen__six">
+                        <h3 class="indent_reset">Оставь заявку и пользуйся системой бесплатно в течение месяца!</h3>
+                        <button id="leave-a-request-btn-2" class="btn btn__primary">Начать работу</button>
+                        <div class="ufo__wrapper">
+                            <div class="ufo">
+                                <div class="ufo__ray"></div>
+                            </div>
+                        </div>
+                        <div class="planet_01"></div>
+                        <div class="planet_02 planet_02_six"></div>
+                        <div class="planet_03 planet_03_six"></div>
+                    </div>
+                </div>
+                <div id="saturn_02" class="saturn_02"></div>
+            </div>
+            <div id="saturn_01" class="saturn_01"></div>
+        </div>
+
+        <div class="screen" id="leave-a-request">
+            <div class="screen__seven">
+                <div class="star__05"></div>
+                <div>
+                    <h2 id="title-leave-a-request" class="indent_reset indent_7">Оставить заявку</h2>
+                    <p id="description-leave-a-request" class="p1 indent_reset indent_46">Оставь заявку и получи бесплатный доступ к системе на месяц</p>
+                    <form id="form-leave-a-request" action="">
+                        <input name="fio" class="input input_theme_dark indent_15" type="text" placeholder="Имя и фамилия *" aria-label="Имя и фамилия">
+                        <p class="error indent indent_minus_9" hidden>
+                            Например: Иван Иванов
+                        </p>
+
+                        <input name="email" class="input input_theme_dark indent_15" type="email" placeholder="Электронная почта  *" aria-label="Электронная почта">
+                        <p class="error indent indent_minus_9" hidden>
+                            Например: ivan_ivanov@gmail.com
+                        </p>
+                        <input name="phone" pattern="\(\d{3}\) \d{3}\-\d{4}" class="input input_theme_dark indent_15 phone" type="text" placeholder="Телефон *" aria-label="Телефон">
+                        <p class="error indent indent_minus_9" hidden>
+                            Например: +7 (912) 876-78-98
+                        </p>
+                        <textarea name="msg" id="msg" class="textarea textarea_theme_dark indent_15" placeholder="Сообщение" aria-label="Сообщение"></textarea>
+                        <label class="checkbox p3 indent_36">Я даю согласие на обработку персональных данных
+                            <input id="form_two_checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <button id="form_two_btn" class="btn btn_size_300-60 btn__primary btn__disabled">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button id="updown" class="btn btn__primary btn__scroll-up-down">
+            <span class="spaceship"></span>
+        </button>
+        <div id="popup" class="popup">
+            <div class="popup__cloud">
+                <p class="popup__text">
+                    Ваша заявка<br>успешно отправлена!<br>Ожидайте звонка!
+                </p>
+            </div>
+            <img src="assets/images/popup/astronaut_stroke.svg" alt="astronaut" class="popup__astronaut">
+        </div>
+    </main>
+    <footer class="footer screen">
+        <p class="p2 indent_reset opacity_08">© 2018 Реактор</p>
+    </footer>
+</div>
+</body>
+<script src="assets/scripts/jquery-2.2.4.min.js"></script>
+<script src="assets/scripts/preload.min.js"></script>
+<script src="assets/scripts/jquery.maskedinput.min.js"></script>
+<script src="assets/scripts/vue.min.js"></script>
+<script src="assets/scripts/vue-carousel-3d.min.js"></script>
+<script src="assets/scripts/carousel-3d-slide.min.js"></script>
+<script src="assets/scripts/main.js?clear-cache-q"></script>
+<script src="assets/scripts/mobile_menu.min.js"></script>
+<script src="assets/scripts/smooth_transition.min.js"></script>
+<script src="assets/scripts/input_mask.min.js"></script>
+<script src="assets/scripts/star.js"></script>
+<script>
+    $(function(){
+        $('#form-leave-a-request, #form-first-request').on('submit', function(e){
+            e.preventDefault();
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,22 @@
+.carousel-3d-slide {
+  box-shadow: 0px 2px 50px rgba(49, 58, 147, 0.2), 0px -2px 50px rgba(49, 58, 147, 0.2);
+  border-radius: 7px !important;
+
+  &.right-1,
+  &.left-1 {
+    opacity: .9 !important;
+  }
+
+  &.right-2,
+  &.left-2 {
+    opacity: .4 !important;
+  }
+}
+
+#carousel {
+  opacity: 0;
+
+  @media (max-width: 1199px) {
+    opacity: 1;
+  }
+}
